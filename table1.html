@@ -1,30 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Table Example</title>
 </head>
 <body>
-    <caption><b> table of student data </b></caption>
-    <table>
-        <thead>
-            <th>Name</th>
-            <th>roll no</th>
-            <th>email</th>
-            <th>address</th>
-            <th>city</th>
-        </thead>
-        <tbody>
-        <tr>
-                <td>ajay</td>
-                <td>1</td>
-                <td>ak12@gmail.com</td>
-                <td>up</td>
-                <td>gzb</td>
-        </tr>
-        </tbody>
-    </table>
+
+<div style="overflow-x:auto;">
+  <table border="1" aria-label="Table Example">
+    <caption>Student Performance Overview</caption>
     
+    <thead>
+      <tr>
+        <th scope="col">Student Name</th>
+        <th scope="col">Class</th>
+        <th scope="col" colspan="2">Scores</th>
+        <th scope="col">Remarks</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th scope="col">Math</th>
+        <th scope="col">Science</th>
+        <th></th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td rowspan="2">Alice</td>
+        <td>10th</td>
+        <td>95</td>
+        <td>89</td>
+        <td>Excellent</td>
+      </tr>
+      <tr>
+        <td>11th</td>
+        <td>92</td>
+        <td>94</td>
+        <td>Very Good</td>
+      </tr>
+
+      <tr>
+        <td>Bob</td>
+        <td>10th</td>
+        <td>78</td>
+        <td>82</td>
+        <td>
+          <!-- Nested table -->
+          <table border="1" aria-label="Bob's extra notes">
+            <thead>
+              <tr>
+                <th scope="col">Subject</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Math</td>
+                <td>Needs improvement</td>
+              </tr>
+              <tr>
+                <td>Science</td>
+                <td>Good effort</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Charlie</td>
+        <td>10th</td>
+        <td colspan="2">Absent</td>
+        <td>N/A</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="5">End of Student Performance Table</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
 </body>
 </html>
