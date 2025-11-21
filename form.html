@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comprehensive HTML Form</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form action="/submit" method="post" aria-label="User Registration Form">
+
+  <!-- Text Input -->
+  <label for="fullname">Full Name:</label>
+  <input type="text" id="fullname" name="fullname" required aria-required="true">
+  <br><br>
+
+  <!-- Email Input -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required aria-required="true">
+  <br><br>
+
+  <!-- Password Input -->
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required aria-required="true">
+  <br><br>
+
+  <!-- Number Input -->
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="1" max="120">
+  <br><br>
+
+  <!-- Date Input -->
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob">
+  <br><br>
+
+  <!-- Time Input -->
+  <label for="appt">Preferred Appointment Time:</label>
+  <input type="time" id="appt" name="appt">
+  <br><br>
+
+  <!-- Telephone Input -->
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" aria-describedby="phoneHelp">
+  <small id="phoneHelp">Format: 1234567890</small>
+  <br><br>
+
+  <!-- URL Input -->
+  <label for="website">Website:</label>
+  <input type="url" id="website" name="website">
+  <br><br>
+
+  <!-- Color Input -->
+  <label for="favcolor">Favorite Color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+  <br><br>
+
+  <!-- Range Input -->
+  <label for="rating">Rate our service:</label>
+  <input type="range" id="rating" name="rating" min="1" max="5">
+  <br><br>
+
+  <!-- Radio Buttons -->
+  <fieldset>
+    <legend>Gender:</legend>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+  </fieldset>
+  <br>
+
+  <!-- Checkboxes -->
+  <fieldset>
+    <legend>Hobbies:</legend>
+    <input type="checkbox" id="reading" name="hobbies" value="reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+    <label for="traveling">Traveling</label>
+
+    <input type="checkbox" id="sports" name="hobbies" value="sports">
+    <label for="sports">Sports</label>
+  </fieldset>
+  <br>
+
+  <!-- Textarea -->
+  <label for="bio">Short Bio:</label>
+  <textarea id="bio" name="bio" rows="4" cols="50" aria-describedby="bioHelp"></textarea>
+  <small id="bioHelp">Write a short introduction about yourself.</small>
+  <br><br>
+
+  <!-- Select Dropdown -->
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="">Select</option>
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="other">Other</option>
+  </select>
+  <br><br>
+
+  <!-- Multiple Select -->
+  <label for="languages">Languages Known:</label>
+  <select id="languages" name="languages" multiple>
+    <option value="english">English</option>
+    <option value="hindi">Hindi</option>
+    <option value="spanish">Spanish</option>
+    <option value="french">French</option>
+  </select>
+  <br><br>
+
+  <!-- File Input -->
+  <label for="resume">Upload Resume:</label>
+  <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+  <br><br>
+
+  <!-- Hidden Input -->
+  <input type="hidden" name="form_id" value="registration123">
+
+  <!-- Submit Button -->
+  <button type="submit">Submit</button>
+
+  <!-- Reset Button -->
+  <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
