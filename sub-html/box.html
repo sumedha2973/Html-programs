@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-.box{
-    padding: 100px;
+.my-box{
+    padding: 30px;
     text-align: center;
-    color: rebeccapurple;
-    background-color: rosybrown;
-    margin: 10%;
-    font-size: 30px;
+    color: rgb(184, 227, 29);
+    background-color: rgb(17, 15, 15);
+    margin: 5%;
+    font-size: 15px;
 }
 </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <h1> Hello </h1>
-        <p> This is a paragraph. </p>
-    </div>
+    <div class="my-box" id="box">
+        <h1> Internal Css </h1>
+        <p> This is a Internal css example. </p>
 
 
- <div class="box1">
-        <h1> Hello-2 </h1>
-        <p> This is second paragraph. </p>
-    </div>
-<p style="color: blueviolet; background-color: rgb(50, 7, 168); text-align: center; font-size: 40px;"> This is Princi Line </p>
+
+ <div class="box1" id="box1">
+        <h1> External css </h1>
+        <p> This is External css example. </p>
+   <div>
+    <div id="box2">
+    <h1> This is div class with unique id and box-model. </h1>
+</div>
+<p style="color: rgb(68, 11, 153); background-color: aliceblue; text-align: center; font-size: 20px; width: 300px; 
+height: 100px;  border: 1px solid rgb(11, 85, 149); padding-right: 50px; margin-left: auto; margin-right: auto;"> 
+This is inline </p>
+</div>
+
+</div>
+</div>
 </body>
 </html>
