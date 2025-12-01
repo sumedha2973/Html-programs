@@ -3,15 +3,17 @@
 <head>
 <style>
     
-.container {
+.container {    
   display: grid;
   grid-template-areas:
     "header header"
     "menu content"
     "footer footer";
   grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
   gap: 3px;
-  background-color: dodgerblue;
+  border: 1px solid red;
+  background-color: aqua;
   padding: 5px;
   
 }
@@ -50,7 +52,7 @@
   <div class="header"><h2>WELCOME TO ABESEC</h2></div>
   <div class="menu"><a href="https://www.pexels.com/search/pet/">DOG PET</a><br><a href="https://4kwallpapers.com/Hindu-God">God </a><br><a href="https://www.pexels.com/search/sport/">Sports</a></div>
   <div class="content">
-    <table border="0" align="center" >
+    <table border="0" align="center"  >
 <tr><td>Email </td><td><input type="email" name="email"></td></tr> 
 <tr><td>Password</td><td><input type="password" name="password"></td></tr>
 <tr><td></td><td><input type="submit" value="Login"></td></tr>   
