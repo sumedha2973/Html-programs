@@ -9,11 +9,22 @@
     body {
         background-color: aqua;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (orientation: portrait) {
         body {
             background-color: antiquewhite;
         }
     }
+    @media screen {
+  body {
+    color: rgb(50, 25, 189);
+  }
+}
+
+@media print {
+  body {
+    color: black;
+  }
+}
 </style>
 <body>
     <h1> This a media page. </h1>
