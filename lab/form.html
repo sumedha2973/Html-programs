@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table Example</title>
+</head>
+<body>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+  <caption><b>Student Information Table</b></caption>
+   <thead>
+      <tr>
+        <th rowspan="2">S.No</th>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Marks</th>
+        <th rowspan="2">Details</th>
+      </tr>
+      <tr>
+        <th>Maths</th>
+        <th>Science</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Rahul</td>
+        <td>85</td>
+        <td>90</td>
+        <td>
+        <!-- Nested Table -->
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Delhi</td>
+          </tr>
+          </table>
+          </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Sakshi</td>
+        <td>92</td>
+        <td>88</td>
+      <td>
+      <!-- Nested Table -->
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Mumbai</td>
+          </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+        <td colspan="5"><b>Total Students: 2</b></td>
+      </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
