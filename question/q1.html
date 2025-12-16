@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image" style="height: 20px; width: 20px;">
+    <img src="register.png"> 
+    </div>
+    
+    <form action="q2.html" style ="text-align: center;">
+        <h1 style="color: rgb(68, 19, 226);"> REGISTRATION FORM </h1>
+        <label for ="name"> Name </label>
+        <input type="text" id="name" name="username" required> <br> <br>
+
+        <label for="email"> Email </label>
+        <input type="email" id="email" name="usermail" required> <br><br>
+
+        <h3> Select gender: </h3>
+    <input type ="radio" name ="q1" value ="A"> Male <br>
+    <input type ="radio" name="q1" value ="B"> Female <br>
+    <input type="radio" name="q1" value="C"> Other <br>
+
+
+        <h1> Select hobbies: </h1>
+    <input type="checkbox" name="q1" value="A"> Reading <br>
+    <input type="checkbox" name="q1" value="B"> Writing <br>
+    <input type="checkbox" name="q1" value="C"> Sports <br> <br>
+
+    <label for="course"> Select course: </label>
+    <select id="course" name="course" required>
+        <option value="Mca"> MCA </option>
+        <option value="bca"> BCA </option>
+        <option value="bba"> BBA </option>
+        <option value="mba"> MBA </option>
+    </select>
+
+        
+
+
+     <h3> <label for="textarea"> Describe about yourself: </label><br></h3>
+    <textarea id="textarea" name="textarea" rows="8" cols="60"> </textarea>
+    
+    
+    <input type="submit" value="Next">
+</form>
+</body>
+</html>

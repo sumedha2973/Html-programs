@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+        display: grid;
+       grid-template-areas:
+      "main main"
+      "sub Sub2 Sub3"   
+     "footer footer";
+      grid-template-columns: 3fr 3fr;
+      gap: 3px;
+      background-color: rgb(209, 177, 228);
+      padding: 5%;
+       } 
+       .container div {
+        background-color: blueviolet;
+        padding: 10px;
+       }
+       .container div.main {
+        background-color: aqua;
+        text-align: center;
+       }
+
+       .container div.sub{
+        background-color: gray;
+        border: 2px black;
+        grid-area: sub;
+}
+.container div.Sub2 {
+    background-color: bisque;
+    grid-area: Sub2;
+}
+.container div.Sub3 {
+    background-color: salmon;
+    grid-area: Sub3;
+}
+.container div.footer {
+    background-color: blue;
+    grid-area: footer;
+}
+    </style>
+</head>
+<body>
+    <div class="h1"> <h1> Grid Layout </h1> </div>
+    <h1> ABESEC </h1>
+    <div class="container">
+        <div class="main"> Images </div>
+        <div class="sub"> <a href="www.google.com"> Visit Google  </a></div>
+        <div class="Sub2"> <a href="www.youtube.com"> Visit Youtube </a></div>
+        <div class="Sub3"> <a href="www.google.com"> Visit Google </a></div>
+        <div class="footer"> Footer </div>
+         </div>
+</body>
+</html>
