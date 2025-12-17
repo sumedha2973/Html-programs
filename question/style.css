@@ -1,11 +1,32 @@
 .h1 {
+<<<<<<< HEAD
     background-color: aqua;
+=======
+    background-color: rgb(84, 31, 218);
+>>>>>>> 464e8b33c452af7f4258b1087bd313f991226fd7
     color: antiquewhite;
     font-size: 20px;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+.h2 {
+    background-color: aqua;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 20px;
+
+}
+>>>>>>> 464e8b33c452af7f4258b1087bd313f991226fd7
 .form {
     background-color: azure;
     color: black;
     font-size: 20px;
+<<<<<<< HEAD
+=======
+}
+.image {
+    height: 50px;
+    width: 50px ;
+>>>>>>> 464e8b33c452af7f4258b1087bd313f991226fd7
 }

@@ -1,0 +1,35 @@
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 40px 60px 40px 60px;
+}
+.subnavbar {
+    display: flex;
+    gap: 10px;
+}
+.brand {
+    padding: 20px;
+}
+.hero {
+    text-align: center;
+    padding: 40px 60px;
+    background-color: rgb(106, 110, 113);
+}
+img {
+    border-radius: 8px;
+    height: 40%;
+    width: 35%;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+}
+.content {
+    display: flex;
+    gap: 10px;
+}
+.image {
+    height: 70%;
+    width: 80%;
+}
